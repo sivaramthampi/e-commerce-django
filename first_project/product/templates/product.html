@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+</head>
+<body  align="center">
+    <h1>This is product file</h1>
+    <form action="user" method="post">
+        {% csrf_token %}
+        Name<input type="text" name="na"><br>
+        Email<input type="email" name="em"><br>
+        Password<input type="password" name="pa"><br>
+        Phone<input type="text" name="ph"><br>
+        <input type="submit" value="Enter">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<title>Product Details</title>
+{%extends 'landing.html'%}
+{%block content%}
+    <h1 align="center">
+        <b><u>{{items.name}}</u></b>
+    </h1>
+    <h2>
+        {{items.description}} <br>
+    </h2>
+    <h3>
+        {{items.features}}
+    </h3>
+    <br>
+    <div style="border: 3px solid;width: 300px;color: red;margin-left: 20%;background-color: bisque;" align="center">
+    <h3><b>Price = ₹{{items.price}}</b></h3>
+    <h3><b>Rating = {{items.starrating}} Star</b></h3>
+    </div>
+    <br>
+    <form action="/home/addtocart" method="">
+        <input type="hidden" name="pid" value="{{items.id}}">
+        <a style="color: black;"><b>Quantity </b></a><input type="number" name="qty" style="width:40px;" min="1" max="10"><input type="submit" value="Add to cart">
+            </form>
+            
+{% endblock %}
+            

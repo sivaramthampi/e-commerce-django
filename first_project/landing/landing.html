@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E-Commerce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    table, th, td {
+      border:1px solid black;
+      padding-left: 50px;
+    } 
+
+    #hoho{
+    color: #ff5f7e;
+    font-size: 16px;
+    }
+    #hoho:hover{
+      color: white;
+    }
+    #mainheader{
+      font-size: 22px;
+      color: purple;
+    }
+    </style>
+  
+</head>
+<body style="color: purple;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(255, 229, 219) 35%, rgb(105, 226, 251) 100%);
+
+">
+<div>
+<nav class="navbar navbar-inverse" style="background: linear-gradient(90deg, rgb(255, 229, 219) 35%, rgb(105, 226, 251) 100%);border: 2.3px;border-bottom-style: solid;border-color:#ff5f7e ;">
+  <div class="container-fluid" >
+    <div class="navbar-header" ">
+      <a class="navbar-brand" href="/" id="mainheader"><b>MDS E-Commerce</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/" id="hoho"><b>Home</b></a></li>
+      <li><a href="/home/db" id="hoho"><b>Products</b></a></li>
+      <li><a href="/home/mycart" id="hoho"><b>Shopping Cart</b></a></li>
+      <li><a href="/home/search" id="hoho"><b>Search</b></a></li>
+      <li><a href="/home/plotter" id="hoho"><b>Plotter</b></a></li>
+    </ul>
+  </div>
+</nav>  
+    <div class="container">
+    {% block content %}
+    <h1 style="font-size: 50px;"><b>Welcome Geeks!!</b></h1>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nobis quasi harum debitis eligendi sequi laudantium cum hic, error quo quisquam, praesentium officia labore provident voluptas eaque! Sapiente, illo quam?</h3>
+    {% endblock %}
+</div>
+</div>
+</body>
+</html>

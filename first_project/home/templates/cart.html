@@ -1,0 +1,28 @@
+<title>Shopping Cart</title>
+{%extends 'landing.html'%}
+{%block content%}
+<h1 align="center" style="font-size:40px;color: cadetblue;"><b><u>My Cart</u></b></h1>
+<h3><b>
+
+
+<table style="border: 3px solid;width: 100%;height: 300px;"> 
+<tr>
+    <th style="border: 3px solid;font-size: 23px;height: 70px;"><u>Products</u></th>
+    <th style="border: 3px solid;font-size: 23px;height: 70px;"><u>Price</u></th>
+    <th style="border: 3px solid;font-size: 23px;height: 70px;"><u>Quantity</u></th>
+    <th style="border: 3px solid;font-size: 23px;height: 70px;"><u>Total Product Amount</u></th>
+</tr>
+{% for i in carteddata%}
+<tr style="color: black;">
+<td><b>{{i.name}}</b></td>
+<td><b>₹{{i.price}}</b></td>
+<td><b>{{i.quantity}}</b></td>
+<td><b>₹{{i.total}}</b></td>
+</tr>
+{%endfor%}
+</table>
+
+<div style="border: 3px solid; margin-top: 40px;width: 600px;" align="center">
+<h2><b>Total price = ₹{{full}}</b></h2>
+</div>
+{%endblock%}

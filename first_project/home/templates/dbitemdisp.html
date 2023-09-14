@@ -1,0 +1,10 @@
+<head><title>Products</title></head>
+{%extends 'landing.html'%}
+{%block content%}
+<u><h1>{{Category}}</h1> </u>
+<h3> {% for i in items %}
+<a href="/home/productdetail/{{i.id}}"><b> {{i.id}}){{i.name}}</b></a> <br>
+<br>
+{% endfor %} </h3>
+{% endblock %}
+</body>
